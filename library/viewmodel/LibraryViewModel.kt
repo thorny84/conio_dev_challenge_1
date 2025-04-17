@@ -46,8 +46,7 @@ class LibraryViewModel(
             _state.value = LibraryState.Loading
             
             runCatching {
-                val booksResult = repository.fetchBooks()
-                val comicBooksResult = repository.fetchComicBooks()
+                val booksResult = repository.getBooks()
 
                 when {
                     booksResult is RepositoryResult.Error -> {
