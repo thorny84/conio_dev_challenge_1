@@ -9,7 +9,7 @@ For requests, i use runchaching that replaces the try/catch that I find too verb
 it also includes various useful methods such as fold
 */
 interface LibraryRepository {
-    suspend fun fetchBooks(): RepositoryResult<List<Book>>
+    suspend fun getBooks(): RepositoryResult<List<Book>>
     //...
 }
 
